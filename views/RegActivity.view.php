@@ -12,17 +12,29 @@
     <h3>New User</h3>
 </div>
 
-<div class="container" >
-    <form method="post"  style="align-content: center; margin-bottom: 120px;" action="../RegAvtivity.php">
+<div class="container">
+    <form method="post" style="align-content: center; margin-bottom: 120px;" action="../RegAvtivity.php">
 
-        <div  class="formStyle">
+        <div class="formStyle">
+
+            <?php if (isset($errors_Reg_Array['affectedroeErrors']) && count($errors_Reg_Array['affectedroeErrors']) > 0) { ?>
+                <div role="alert"
+                     style="border:1px solid #bb3f32; border-radius:5px ; color:#993122; background-color:rgba(226,56,58,0.35) ;padding: 5px; margin: 5px">
+                    <strong> * ERROR</strong>
+
+                    <?php foreach ($errors_Reg_Array['affectedroeErrors'] as $k => $v) {
+                        echo $v;
+                    }
+                    ?>
+                </div>
+
+            <?php } ?>
 
 
-
-
-           <div >
+            <div>
                 <label for="Email"></label>
-              <input type="email" id="E-mail" name="Email" class="iText"style="color:#20c997;text-align: center" placeholder="your E-mail">
+                <input type="email" id="E-mail" name="Email" value="<?php echo $E_Mail ; ?>" class="iText" style="color:#20c997;text-align: center"
+                       placeholder="your E-mail">
             </div>
             <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['mailError']) > 0) { ?>
 
@@ -37,9 +49,10 @@
             <?php } ?>
 
 
-            <div >
+            <div>
                 <label for="password"></label>
-                 <input type="password" id="password" name="password" class="iText" style="color:#20c997;text-align: center" placeholder="your password">
+                <input type="password" id="password" name="password" class="iText"
+                       style="color:#20c997;text-align: center" placeholder="your password">
             </div>
             <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['passError']) > 0) { ?>
 
@@ -53,9 +66,10 @@
 
             <?php } ?>
 
-            <div >
+            <div>
                 <label for="rePassword"></label>
-              <input type="password" id="rePassword" name="rePassword" class="iText" style="color:#20c997;text-align: center" placeholder="Retype Password">
+                <input type="password" id="rePassword" name="rePassword" class="iText"
+                       style="color:#20c997;text-align: center" placeholder="Retype Password">
             </div>
             <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['repassError']) > 0) { ?>
 
@@ -81,10 +95,10 @@
             <?php } ?>
 
 
-
-            <div >
+            <div>
                 <label for="nickName"></label>
-               <input type="text" id="nickName" name="nickName" class="iText" style="color:#20c997;text-align: center"placeholder="nick Name">
+                <input type="text" id="nickName" name="nickName" value="<?php echo $nickName ; ?>" class="iText" style="color:#20c997;text-align: center"
+                       placeholder="nick Name">
             </div>
             <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['nickNameError']) > 0) { ?>
 
@@ -98,9 +112,10 @@
 
             <?php } ?>
 
-            <div >
+            <div>
                 <label for="phone"></label>
-               <input type="text" id="phone" name="phone" class="iText"style="color:#20c997;text-align: center" placeholder="phone number">
+                <input type="text" id="phone" name="phone" value="<?php echo $phone ; ?>" class="iText" style="color:#20c997;text-align: center"
+                       placeholder="phone number">
             </div>
             <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['phoneError']) > 0) { ?>
 
@@ -127,7 +142,7 @@
 </div>
 
 <div>
-<?php include_once('template/footer_design.php'); ?>
+    <?php include_once('template/footer_design.php'); ?>
 </div>
 <script src="../assets/js/all.min.js"></script>
 </body>
