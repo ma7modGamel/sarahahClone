@@ -13,32 +13,106 @@
 </div>
 
 <div class="container" >
-    <form method="post"  style="align-content: center; margin-bottom: 120px;" action="../thanx.php">
+    <form method="post"  style="align-content: center; margin-bottom: 120px;" action="../RegAvtivity.php">
 
-        <div method="post" class="formStyle" action="#">
+        <div  class="formStyle">
+
+
+
 
            <div >
-                <label for="E-mail"></label>
-              <input type="email" id="E-mail" name="E-mail" class="iText"style="text-align: center" placeholder="your E-mail">
+                <label for="Email"></label>
+              <input type="email" id="E-mail" name="Email" class="iText"style="color:#20c997;text-align: center" placeholder="your E-mail">
             </div>
+            <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['mailError']) > 0) { ?>
+
+                <div style=" color:#db2200 ;padding-bottom: 5px; margin-bottom: 5px">
+
+                    <?php foreach ($errors_Reg_Array['mailError'] as $k => $v) {
+                        echo $v;
+                    }
+                    ?>
+                </div>
+
+            <?php } ?>
+
+
             <div >
                 <label for="password"></label>
-                 <input type="password" id="password" name="password" class="iText" style="text-align: center" placeholder="your password">
+                 <input type="password" id="password" name="password" class="iText" style="color:#20c997;text-align: center" placeholder="your password">
             </div>
+            <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['passError']) > 0) { ?>
+
+                <div style=" color:#db2200 ;padding-bottom: 5px; margin-bottom: 5px">
+
+                    <?php foreach ($errors_Reg_Array['passError'] as $k => $v) {
+                        echo $v;
+                    }
+                    ?>
+                </div>
+
+            <?php } ?>
 
             <div >
                 <label for="rePassword"></label>
-              <input type="password" id="rePassword" name="rePassword" class="iText" style="text-align: center" placeholder="Retype Password">
+              <input type="password" id="rePassword" name="rePassword" class="iText" style="color:#20c997;text-align: center" placeholder="Retype Password">
             </div>
+            <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['repassError']) > 0) { ?>
+
+                <div style=" color:#db2200 ;padding-bottom: 5px; margin-bottom: 5px">
+
+                    <?php foreach ($errors_Reg_Array['repassError'] as $k => $v) {
+                        echo $v;
+                    }
+                    ?>
+                </div>
+
+            <?php }
+            if (isset($errors_Reg_Array) && count($errors_Reg_Array['passNotEqualRepass']) > 0) { ?>
+
+                <div style=" color:#db2200 ;padding-bottom: 5px; margin-bottom: 5px">
+
+                    <?php foreach ($errors_Reg_Array['passNotEqualRepass'] as $k => $v) {
+                        echo $v;
+                    }
+                    ?>
+                </div>
+
+            <?php } ?>
+
+
+
             <div >
                 <label for="nickName"></label>
-               <input type="text" id="nickName" name="nickName" class="iText" style="text-align: center"placeholder="nick Name">
+               <input type="text" id="nickName" name="nickName" class="iText" style="color:#20c997;text-align: center"placeholder="nick Name">
             </div>
+            <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['nickNameError']) > 0) { ?>
+
+                <div style=" color:#db2200 ;padding-bottom: 5px; margin-bottom: 5px">
+
+                    <?php foreach ($errors_Reg_Array['nickNameError'] as $k => $v) {
+                        echo $v;
+                    }
+                    ?>
+                </div>
+
+            <?php } ?>
+
             <div >
                 <label for="phone"></label>
-               <input type="text" id="phone" name="phone" class="iText"style="text-align: center" placeholder="phone number">
+               <input type="text" id="phone" name="phone" class="iText"style="color:#20c997;text-align: center" placeholder="phone number">
             </div>
+            <?php if (isset($errors_Reg_Array) && count($errors_Reg_Array['phoneError']) > 0) { ?>
 
+                <div style=" color:#db2200 ;padding-bottom: 5px; margin-bottom: 5px">
+
+                    <?php foreach ($errors_Reg_Array['phoneError'] as $k => $v) {
+                        echo $v;
+                    }
+                    ?>
+                </div>
+
+            <?php } ?>
 
 
             <div style=" padding: 10px; text-align: center">

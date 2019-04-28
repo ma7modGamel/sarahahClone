@@ -18,8 +18,12 @@
 .formStyle{
 
 
+
     margin-top: 5px;
     text-align: center;
+}
+.formStyle input{
+    color: #28a745;
 }
 .formStyle div{
 
