@@ -1,0 +1,228 @@
+*{
+
+}
+
+.container{
+
+    max-width: 656px;
+    min-width: fit-content;
+    box-shadow: 0 0 20px #e0e0e0;
+    background-color: #ffffff;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    padding: 2%;
+    z-index: 5;
+}
+.formStyle{
+
+
+    margin-top: 5px;
+    text-align: center;
+}
+.formStyle div{
+
+    margin: 5px;
+}
+a{
+    color: #6c757d;
+    text-decoration:none;
+
+}
+a:hover{
+    color: #10bbb3;
+}
+
+.iText{
+    font-family: 'Exo', sans-serif;
+    max-width: 300px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid;
+    border-color: #ebebeb;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 8px;
+    margin-top: 3px;
+
+}
+.iText:hover{
+    border-color: #10bbb3;
+}
+.iText:valid {
+
+}
+
+.iButton{
+    width: 150px;
+    background-color: #ffffff;
+    color: #10bbb3;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #10bbb3;
+    margin: 4px; padding: 8px;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: #f5f8fa;
+
+
+}
+header{
+    width: 100%;
+    height: 65px;
+    background-color:#10bbb3 ;
+}
+.navbar{
+
+    box-sizing: border-box;
+    height: 65px;
+    text-align: end;
+
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.nomargininput{
+    font-family: 'Exo', sans-serif;
+    max-width: 300px;
+    height: 35px;
+    width: 100%;
+    margin-right: 5px;
+    border: 0px solid ;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #efefef;
+    color: #010101;
+    text-align: center;
+    
+}
+span{
+
+
+    padding-right: 16px;
+    color: #9da9b0;
+}
+
+footer span{
+    margin: auto;
+
+}
+.navbar-div{
+    display: inline-flex;
+}
+footer span p a {
+    color: #10bbb3;
+}
+.footorinput{
+    border: 1px solid;
+    margin-top: 8px;
+    border-radius: 5px;
+    color: #f5f8fa;!important;
+    height: 40px;
+    width: 100px;
+    background-color: #10bbb3;!important;
+}
+
+
+.ul-class{
+    align-self: flex-end;
+    width: 100%;
+    padding: 5px;
+    list-style: none;
+    display: inline-flex;
+    background-color: #10bbb3;!important;
+}
+.left{
+    padding-left: 18px;
+    padding-top: 20px;
+    width: 60%;
+    float: left;
+    display: inline-flex;
+}
+.right{
+
+    float: right ;
+}
+
+.divContactUs{
+    margin-top: 80px;
+    margin-left: 80px;
+    font-family: 'Exo', sans-serif;
+
+}
+
+li a {
+
+    font-family: 'Exo', sans-serif;
+    padding-right: 12px;
+    padding-left:12px ;
+    color: #ffffff;
+    font-size: 14px;
+
+}
+li a:hover{
+    -ms-content-zoom-chaining:chained;
+    background-color: #f5f8fa;
+    color: #1ab6d0;
+    padding: 8px;
+    border-radius: 5px  ;
+}
+section{
+    width: 100%;
+}
+
+h3{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 24px  ;
+    color: #20bbb3;
+}
+.divTwo{
+    padding-top: 3.5%;
+    text-align: center ;
+}
+.topnav {
+    background-color: rgba(255, 104, 85, 0);
+    overflow: hidden;
+
+
+
+}
+
+.formStyle span input:hover{
+    -ms-content-zoom-chaining:chained;
+    background-color: #109991;
+    color: #f5f8fa;
+    padding: 8px;
+    border-radius: 5px
+
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    font-family: 'Exo', sans-serif;
+    padding-right: 12px;
+    padding-left:12px ;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
