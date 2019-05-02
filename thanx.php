@@ -17,7 +17,7 @@
 
 
     <div class="divContactUs">
-        <div style="  color: #ffffff; background: #10bbb3; align-items: center;border: 1px skyblue solid; border-radius: 5px; padding: 10px ; width: fit-content; margin:auto;">
+        <div style="  color: #ffffff; background: #109991; align-items: center;border: 1px skyblue solid; border-radius: 5px; padding: 10px ; width: fit-content; margin:auto;">
             <h2 style=" font-family: 'Exo', sans-serif;  "> message is sent successfuly ! Thanks for your honesty
             </h2>
         </div>

@@ -6,7 +6,7 @@
 <?php include_once('template/header_design.php'); ?>
 
 <div class="divTwo ">
-    <img src="assets/images/avatar-female.png" style="height: 50px">
+    <img src="../assets/images/avatar-female.png" style="height: 50px">
 
     <h3>Login</h3>
 </div>
@@ -76,6 +76,5 @@
 
 <?php include_once('template/footer_design.php'); ?>
 
-<script src="assets/js/all.min.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <?php include_once('template/header_design.php'); ?>
 
 <div class="divTwo ">
-    <img src="assets/images/avatar-female.png" style="height: 50px">
+    <img src="../assets/images/avatar-female.png" style="height: 50px">
 
     <h3>New User</h3>
 </div>

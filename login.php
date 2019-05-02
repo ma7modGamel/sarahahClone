@@ -33,7 +33,7 @@ if(isset($_POST['pass'])){
 
 
 
-if(count($array_Errors['nameError'])==0 &&count($array_Errors['passError'])==0){
+if(count($array_Errors['nameError'])==0 &&count($array_Errors['passError'])==0 && $pass &&$usernameOrPhone){
 
     $sql="SELECT COUNT(*) AS k FROM users WHERE email='$usernameOrPhone' OR phone='$usernameOrPhone' AND pass='$pass'; ";
     $result=$conn->query($sql)->fetch_all(MYSQLI_ASSOC);
@@ -46,7 +46,7 @@ if(count($array_Errors['nameError'])==0 &&count($array_Errors['passError'])==0){
         $_SESSION['$isFound'] =true;
         $_SESSION['usernameOrPhone']=$usernameOrPhone;
 
-        header('Location: http://Localhost/thanx.php');
+        header('Location: http://Localhost/home.php');
 
     }else{
         array_push($array_Errors['authError'],'Login Field , please check your data !');
